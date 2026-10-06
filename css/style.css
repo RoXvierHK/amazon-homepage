@@ -37,3 +37,50 @@ body {
     margin-left: -9px;
     margin-top: -125px;
 }
+
+/* Delivery address: float beside the logo; dimensions and spacing are calculated from the original layout. */
+.delivery {
+    float: left;
+    height: 50px;
+    margin: 5px 2px 5px 15px;
+    padding: 0 9px;
+}
+
+/* Location icon: use the original 15px by 18px region; top spacing is calculated from its original alignment. */
+.location-icon {
+    float: left;
+    width: 15px;
+    height: 18px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* Location image: use the original offsets to show the pin. */
+.location-icon img {
+    display: block;
+    margin-left: -71px;
+    margin-top: -378px;
+}
+
+/* Delivery text: use the original 3px gap; top spacing is calculated to center the two lines. */
+.delivery-text {
+    float: left;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+/* Delivery label: use the original text color, font size and line height. */
+.delivery-label {
+    color: #ccc;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+/* Delivery destination: use the original text color, font size, line height and bottom padding. */
+.delivery-country {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+    padding-bottom: 1px;
+}
