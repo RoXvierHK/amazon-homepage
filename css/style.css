@@ -88,3 +88,68 @@ body {
     line-height: 15px;
     padding-bottom: 1px;
 }
+
+/* Search bar: leave an estimated 440px for the right-side header items. */
+.search-bar {
+    overflow: hidden;
+    padding: 10px 4px 10px 3px;
+    margin-right: 440px;
+}
+
+/* Search category: use the original color and font size with a calculated 52px width. */
+.search-category {
+    float: left;
+    width: 52px;
+    height: 40px;
+    padding-left: 5px;
+    border: 0;
+    background-color: #e6e6e6;
+    color: #555;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* Search button: use the original 45px width, 40px height and orange background. */
+.search-button {
+    float: right;
+    width: 45px;
+    height: 40px;
+    border: 0;
+    overflow: hidden;
+    background-color: #febd69;
+}
+
+/* Search image: display the 2x image at half size using the original button offsets. */
+.search-button img {
+    display: block;
+    width: 350px;
+    height: 450px;
+    margin-left: 2px;
+    margin-top: -280px;
+}
+
+/* Search field: fill the remaining width and reproduce the original 8px text inset with padding. */
+.search-field {
+    overflow: hidden;
+    height: 40px;
+    padding-left: 8px;
+    background-color: #fff;
+}
+
+/* Search input: fill the field and use the original 15px font size and text color. */
+.search-field input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background-color: #fff;
+    color: #111;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* Search category: use the original background and text colors on hover. */
+.search-category:hover {
+    background-color: #d4d4d4;
+    color: #000;
+}
