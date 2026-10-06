@@ -9,7 +9,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Test heading: make the text blue to check if the CSS works. */
-h1 {
-    color: blue;
+/* Top bar: use the background color and 60px height from the original Amazon page. */
+.top-bar {
+    background-color: #131921;
+    height: 60px;
+}
+
+/* Navigation bar: use the original Amazon page's background color and its 39px maximum height as this bar's height. */
+.nav-bar {
+    background-color: #232f3e;
+    height: 39px;
 }
