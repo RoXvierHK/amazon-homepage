@@ -20,3 +20,20 @@ body {
     background-color: #232f3e;
     height: 39px;
 }
+
+/* Logo: use the original 98px by 34px region; spacing is calculated from the original page's CSS. */
+.logo {
+    float: left;
+    width: 98px;
+    height: 34px;
+    margin-top: 17px;
+    margin-left: 22px;
+    overflow: hidden;
+}
+
+/* Logo image: use the original offsets to show only the Amazon logo. */
+.logo img {
+    display: block;
+    margin-left: -9px;
+    margin-top: -125px;
+}
