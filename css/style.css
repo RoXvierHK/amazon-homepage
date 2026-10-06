@@ -31,9 +31,11 @@ body {
     overflow: hidden;
 }
 
-/* Logo image: use the original offsets to show only the Amazon logo. */
+/* Logo image: display the 2x image at half size and keep the original logo offsets. */
 .logo img {
     display: block;
+    width: 350px;
+    height: 450px;
     margin-left: -9px;
     margin-top: -125px;
 }
@@ -55,9 +57,11 @@ body {
     overflow: hidden;
 }
 
-/* Location image: use the original offsets to show the pin. */
+/* Location image: display the 2x image at half size and keep the original pin offsets. */
 .location-icon img {
     display: block;
+    width: 350px;
+    height: 450px;
     margin-left: -71px;
     margin-top: -378px;
 }
