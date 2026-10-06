@@ -1,0 +1,15 @@
+/* Universally remove default margins and padding from all elements. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page text: use Arial as the main font throughout the page. */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Test heading: make the text blue to check if the CSS works. */
+h1 {
+    color: blue;
+}
