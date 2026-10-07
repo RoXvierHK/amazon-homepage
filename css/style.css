@@ -89,11 +89,10 @@ body {
     padding-bottom: 1px;
 }
 
-/* Search bar: leave an estimated 440px for the right-side header items. */
+/* Search bar: include the original wide-screen gaps in the float layout; 3 + 18 = 21 and 4 + 18 = 22. */
 .search-bar {
     overflow: hidden;
-    padding: 10px 4px 10px 3px;
-    margin-right: 440px;
+    padding: 10px 22px 10px 21px;
 }
 
 /* Search category: use the original color and font size with a calculated 52px width. */
@@ -152,4 +151,188 @@ body {
 .search-category:hover {
     background-color: #d4d4d4;
     color: #000;
+}
+
+/* Header tools: float right and contain the items; use 15px of outer spacing for this layout. */
+.header-tools {
+    float: right;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+/* Header items: arrange side by side; the 48px content and two borders make a 50px box. */
+.header-item {
+    float: left;
+    height: 48px;
+    margin: 5px 0 5px 6px;
+    padding: 0 9px;
+    border: 1px solid transparent;
+}
+
+/* Header labels: use the original 12px text and 14px line height; add 9px of top spacing. */
+.header-label {
+    margin-top: 9px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+/* Header titles: place the bold second line below the label using the original text sizes. */
+.header-title {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+/* Header items: show a white border on hover without changing the box size. */
+.header-item:hover {
+    border-color: #fff;
+}
+
+/* Cart: keep the original 50px outer height and 9px side inset, including a 1px border. */
+.cart {
+    float: left;
+    height: 48px;
+    margin: 5px 0 5px 6px;
+    padding: 0 8px;
+    border: 1px solid transparent;
+}
+
+/* Cart graphic: use the original 41px icon width within the 48px content height. */
+.cart-graphic {
+    float: left;
+    width: 41px;
+    height: 48px;
+}
+
+/* Cart icon: use the original crop; top spacing is 50 - 11 - 28 - 1 = 10px. */
+.cart-icon {
+    width: 41px;
+    height: 28px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+/* Cart image: display the 2x sprite at half size using the original cart offsets. */
+.cart-icon img {
+    display: block;
+    width: 350px;
+    height: 450px;
+    margin-left: -218px;
+    margin-top: -337px;
+}
+
+/* Cart count: keep the original text styles and 14px left offset; 7 - (10 + 28) = -31px. */
+.cart-count {
+    display: block;
+    width: 19px;
+    height: 16px;
+    margin-top: -31px;
+    margin-left: 14px;
+    color: #f08804;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+}
+
+/* Cart label: use the original text sizes; top spacing is 50 - 11 - 15 - 1 = 23px. */
+.cart-label {
+    float: left;
+    margin-top: 23px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+/* Cart: show the original white hover border without changing the outer size. */
+.cart:hover {
+    border-color: #fff;
+}
+
+/* Language area: use the original outer spacing; 2px plus 3px places the tools 5px below the top. */
+.language-choice {
+    float: left;
+    margin: 5px 1px 0;
+    padding: 0 6px 5px 7px;
+}
+
+/* Language content: use the original margins and padding; 50 - 5 = 45px of content height. */
+.language-content {
+    float: left;
+    height: 45px;
+    margin: 1px;
+    padding: 0 2px 5px 7px;
+}
+
+/* Language row: replace the original centered two-line layout; (45 - 16 - 19) / 2 + 16 = 21px. */
+.language-row {
+    margin-top: 21px;
+    margin-left: 1px;
+    overflow: hidden;
+}
+
+/* Flag space: keep the original 24px by 18px area and its surrounding gaps. */
+.language-flag {
+    float: left;
+    width: 24px;
+    height: 18px;
+    margin-right: 2px;
+    margin-bottom: 1px;
+}
+
+/* Flag crop: reproduce the original 90% scale, centered within the flag space. */
+.flag-crop {
+    width: 21.6px;
+    height: 16.2px;
+    margin-top: 0.9px;
+    margin-left: 1.2px;
+    overflow: hidden;
+}
+
+/* Flag image: scale the original 194px by 295px sprite by 0.9; the US offset is 130 * 0.9 = 117px. */
+.flag-crop img {
+    display: block;
+    width: 174.6px;
+    height: 265.5px;
+    margin-top: -117px;
+}
+
+/* Language text: use the original text sizes; (19 - 15) / 2 = 2px centers the line. */
+.language-text {
+    float: left;
+    margin-top: 2px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+/* Dropdown arrows: reproduce the original 8px-wide, 4px-high triangles using borders. */
+.language-arrow,
+.account-arrow {
+    float: left;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #a7acb2;
+}
+
+/* Language arrow: use the original top and left offsets; cancel its 8px width plus 1px gap in normal flow. */
+.language-arrow {
+    margin-top: 31px;
+    margin-left: 1px;
+    margin-right: -9px;
+}
+
+/* Account text: preserve the original inner side spacing; subtract the outer border from its 2px vertical offset. */
+.account-text {
+    float: left;
+    margin: 1px 1px 0;
+    padding: 0 4px 0 9px;
+}
+
+/* Account arrow: subtract the 1px outer border from the original 31.5px top offset. */
+.account-arrow {
+    margin-top: 30.5px;
 }

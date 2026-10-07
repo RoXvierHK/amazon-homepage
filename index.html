@@ -7,53 +7,122 @@
 </head>
 <body>
     <!-- Top bar: dark background for the logo, search and account area. -->
-<div class="top-bar">
-    <!-- Logo: show the Amazon logo from the local icon image. -->
-    <div class="logo">
-        <img src="img/amazon-icons-2x.png" alt="Amazon">
-    </div>
-    <!-- End of logo. -->
-    
-    <!-- Delivery address: location icon and the current delivery destination. -->
-     <div class="delivery">
-        <!-- Location icon: show the pin from the local icon image. -->
-         <div class="location-icon">
-            <img src="img/amazon-icons-2x.png" alt="">
-         </div>
-         <!-- End of location icon. -->
-    
-         <!-- Delivery text: show the label above the destination. -->
-          <div class="delivery-text">
-            <p class="delivery-label">Deliver to</p>
-            <strong class="delivery-country">Hong Kong</strong>
-          </div>
-          <!-- End of delivery text. -->
-     </div>
-     <!-- End of delivery address. -->
-    
-    <!-- Search bar: category selection, text input and search button. -->
-     <div class="search-bar">
-        <!-- Search category: show the current All category. -->
-        <select class="search-category" aria-label="Search category">
-            <option>All</option>
-        </select>
-        <!-- End of search category. -->
-        
-        <!-- Search button: show the magnifying glass from the local icon image. -->
-        <button class="search-button" type="button" aria-label="Search">
-            <img src="img/amazon-icons-2x.png" alt="">
-        </button>
-        <!-- End of search button. -->
-        
-        <!-- Search field: fill the space between the category and button. -->
-        <div class="search-field">
-            <input type="text" placeholder="Search Amazon" aria-label="Search Amazon">
+    <div class="top-bar">
+        <!-- Logo: show the Amazon logo from the local icon image. -->
+        <div class="logo">
+            <img src="img/amazon-icons-2x.png" alt="Amazon">
         </div>
-        <!-- End of search field. -->
-     </div>
-     <!-- End of search bar. -->
-</div>
-<!-- End of top bar. -->
+        <!-- End of logo. -->
+
+        <!-- Delivery address: location icon and the current delivery destination. -->
+        <div class="delivery">
+            <!-- Location icon: show the pin from the local icon image. -->
+            <div class="location-icon">
+                <img src="img/amazon-icons-2x.png" alt="">
+            </div>
+            <!-- End of location icon. -->
+
+            <!-- Delivery text: show the label above the destination. -->
+            <div class="delivery-text">
+                <p class="delivery-label">Deliver to</p>
+                <strong class="delivery-country">Hong Kong</strong>
+            </div>
+            <!-- End of delivery text. -->
+        </div>
+        <!-- End of delivery address. -->
+
+        <!-- Header tools: account and order information on the right. -->
+        <div class="header-tools">
+            <!-- Language: show the US flag, English label and dropdown arrow. -->
+            <div class="language-choice">
+                <!-- Language content: place the flag beside EN. -->
+                <div class="language-content">
+                    <div class="language-row">
+                        <!-- Flag: show the US region from the local flag image. -->
+                        <div class="language-flag">
+                            <div class="flag-crop">
+                                <img src="img/amazon-flags.png" alt="US">
+                            </div>
+                        </div>
+                        <!-- End of flag. -->
+                        
+                        <!-- Language label: show the current language. -->
+                        <strong class="language-text">EN</strong>
+                        <!-- End of language label. -->
+                    </div>
+                </div>
+                <!-- End of language content. -->
+
+                <!-- Language arrow: show the downward triangle. -->
+                <span class="language-arrow" aria-hidden="true"></span>
+                <!-- End of language arrow. -->
+            </div>
+            <!-- End of language. -->
+            
+            <!-- Account: show the sign-in message, account label and arrow. -->
+            <div class="header-item account-item">
+                <!-- Account text: arrange the two lines above each other. -->
+                <div class="account-text">
+                    <p class="header-label">Hello, sign in</p>
+                    <strong class="header-title">Account &amp; Lists</strong>
+                </div>
+                <!-- End of account text. -->
+                
+                <!-- Account arrow: show the downward triangle. -->
+                <span class="account-arrow" aria-hidden="true"></span>
+                <!-- End of account arrow. -->
+            </div>
+            <!-- End of account. -->
+
+            <!-- Orders: show the returns and orders label. -->
+            <div class="header-item">
+                <p class="header-label">Returns</p>
+                <strong class="header-title">&amp; Orders</strong>
+            </div>
+            <!-- End of orders. -->
+            
+            <!-- Cart: show the cart icon, item count and label. -->
+            <div class="cart">
+                <!-- Cart graphic: place the item count over the local icon. -->
+                <div class="cart-graphic">
+                    <div class="cart-icon">
+                        <img src="img/amazon-icons-2x.png" alt="">
+                    </div>
+                    <strong class="cart-count">0</strong>
+                </div>
+                <!-- End of cart graphic. -->
+                
+                <!-- Cart label: show the text beside the icon. -->
+                <strong class="cart-label">Cart</strong>
+                <!-- End of cart label. -->
+            </div>
+            <!-- End of cart. -->
+        </div>
+        <!-- End of header tools. -->
+
+        <!-- Search bar: category selection, text input and search button. -->
+        <div class="search-bar">
+            <!-- Search category: show the current All category. -->
+            <select class="search-category" aria-label="Search category">
+                <option>All</option>
+            </select>
+            <!-- End of search category. -->
+
+            <!-- Search button: show the magnifying glass from the local icon image. -->
+            <button class="search-button" type="button" aria-label="Search">
+                <img src="img/amazon-icons-2x.png" alt="">
+            </button>
+            <!-- End of search button. -->
+
+            <!-- Search field: fill the space between the category and button. -->
+            <div class="search-field">
+                <input type="text" placeholder="Search Amazon" aria-label="Search Amazon">
+            </div>
+            <!-- End of search field. -->
+        </div>
+        <!-- End of search bar. -->
+    </div>
+    <!-- End of top bar. -->
 
     <!-- Navigation bar: background for the menu links below the top bar. -->
     <div class="nav-bar"></div>
