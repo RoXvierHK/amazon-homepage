@@ -13,6 +13,7 @@ body {
 .top-bar {
     background-color: #131921;
     height: 60px;
+    overflow: hidden;
 }
 
 /* Navigation bar: use the original Amazon page's background color and its 39px maximum height as this bar's height. */
@@ -335,4 +336,81 @@ body {
 /* Account arrow: subtract the 1px outer border from the original 31.5px top offset. */
 .account-arrow {
     margin-top: 30.5px;
+}
+
+/* Navigation bar: use the original color, 39px height and wide-screen 15px left inset. */
+.nav-bar {
+    background-color: #232f3e;
+    height: 39px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+
+/* All area: reserve a border within the 39px height and the original 9px side inset. */
+.nav-all {
+    float: left;
+    height: 37px;
+    margin-right: 3px;
+    padding: 0 8px;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+/* Menu icon: use the original crop; (37 - 14) / 2 = 11.5px centers it vertically. */
+.nav-menu-icon {
+    float: left;
+    width: 17px;
+    height: 14px;
+    margin-top: 11.5px;
+    overflow: hidden;
+}
+
+/* Menu image: display the 2x image at half size using the original menu offsets. */
+.nav-menu-icon img {
+    display: block;
+    width: 350px;
+    height: 450px;
+    margin-left: -172px;
+    margin-top: -255px;
+}
+
+/* All label: use the original 14px font, 12px line height and 5px gap; (37 - 12) / 2 = 12.5px. */
+.nav-all-label {
+    float: left;
+    margin-top: 12.5px;
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 12px;
+}
+
+/* All area: show a white hover border without moving its contents. */
+.nav-all:hover {
+    border-color: #fff;
+}
+
+/* Shopping links: occupy the space after All and contain their floats. */
+.nav-links {
+    overflow: hidden;
+}
+
+/* Menu links: use the original 5px wrapper gaps; padding includes space for a 1px border. */
+.nav-link {
+    float: left;
+    height: 12px;
+    margin: 5px 5px 6px;
+    padding: 7px 4px;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 14px;
+    line-height: 12px;
+    text-decoration: none;
+}
+
+/* Menu hover: use the original full-height border; 12 + 12 + 13 + 2 = 39px. */
+.nav-link:hover {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    border-color: #fff;
 }
