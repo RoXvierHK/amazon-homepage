@@ -641,3 +641,8 @@ body {
 .category-section-next {
     margin-top: 24px;
 }
+
+/* Hidden category row: keep the two extra cards in the HTML without displaying them, matching the saved original page. */
+.hidden-category-row {
+    display: none;
+}
