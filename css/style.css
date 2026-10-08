@@ -704,10 +704,21 @@ body {
     clear: both;
 }
 
-/* Back to top: use the original background and a height of 15px + 19px + 15px. */
+/* Back to top: make the whole bar clickable; the original 15px padding and 19px line height make it 49px tall. */
 .back-to-top {
-    height: 49px;
+    display: block;
+    padding: 15px 0;
     background-color: #37475a;
+    color: #fff;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Back to top hover: use the original lighter background color. */
+.back-to-top:hover {
+    background-color: #485769;
 }
 
 /* Footer links: use the original background; reserve 348px based on the screenshot measurement. */
