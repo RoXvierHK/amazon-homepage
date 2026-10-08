@@ -636,3 +636,8 @@ body {
 .category-card-last {
     margin-right: 0;
 }
+
+/* Following category rows: use the original 24px gap between rows. */
+.category-section-next {
+    margin-top: 24px;
+}
