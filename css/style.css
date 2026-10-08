@@ -721,9 +721,9 @@ body {
     background-color: #485769;
 }
 
-/* Footer links: use the original background; reserve 348px based on the screenshot measurement. */
+/* Footer links: keep the original background and 40px gaps above and below the columns. */
 .footer-links {
-    height: 348px;
+    padding: 40px 0;
     background-color: #232f3e;
 }
 
@@ -787,4 +787,85 @@ body {
 /* Registration link hover: use the original darker blue. */
 .recommendation-customer a:hover {
     color: #0c3353;
+}
+
+/* Footer columns: use the original 1000px wide-screen limit and contain the floated columns. */
+.footer-columns {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Footer column: use the original 10px side padding; each gap is 10% of 1000px, and line height is 14px times 120%. */
+.footer-column {
+    float: left;
+    box-sizing: border-box;
+    margin-right: 100px;
+    padding: 0 10px;
+    color: #ddd;
+    font-size: 14px;
+    line-height: 16.8px;
+}
+
+/* About column: calculate the width from the original font measurements, including side padding. */
+.footer-about {
+    width: 136.02px;
+}
+
+/* Business column: calculate its share of the available width from the original font measurements. */
+.footer-business {
+    width: 184.34px;
+}
+
+/* Payment column: calculate the width from the original heading and side padding. */
+.footer-payment {
+    width: 222.20px;
+}
+
+/* Help column: use the remaining calculated width and remove the final gap. */
+.footer-help {
+    width: 157.44px;
+    margin-right: 0;
+}
+
+/* Footer headings: use the original 16px bold white text and 6px top and 14px bottom margins. */
+.footer-column h3 {
+    margin: 6px 0 14px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Footer lists: remove the bullet points, as in the original page. */
+.footer-column ul {
+    list-style-type: none;
+}
+
+/* Footer list items: use the original 10px bottom gap. */
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+/* Footer links: use the original light gray color without an underline. */
+.footer-column a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+/* Footer link hover: show an underline, as in the original page. */
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* More arrow: use the original 15px bold character and line height. */
+.footer-more-arrow {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+/* More link: keep the original 4px gap after the arrow. */
+.footer-more-link {
+    padding-left: 4px;
 }
