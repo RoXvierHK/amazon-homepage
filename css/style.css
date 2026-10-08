@@ -470,6 +470,8 @@ body {
     width: 1600px;
     margin: 0 auto;
     background-color: #fff;
+    /* Bottom spacing: use the 24px gap measured from the reference screenshot. */
+    padding-bottom: 24px;
 }
 
 /* Promotions: use the original 1600px outer width and surrounding spacing. */
@@ -676,4 +678,50 @@ body {
 /* Hidden category row: keep the two extra cards in the HTML without displaying them, matching the saved original page. */
 .hidden-category-row {
     display: none;
+}
+
+/* Recommendations: extend white across the page; keep the original 20px top gap and 20px + 30px bottom gaps. */
+.recommendation-section {
+    clear: both;
+    padding: 20px 0 50px;
+    background-color: #fff;
+}
+
+/* Recommendation box: use the original border and corners; reserve 148px based on the screenshot measurement. */
+.recommendation-box {
+    box-sizing: border-box;
+    height: 148px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer: start below any floated content. */
+.page-footer {
+    clear: both;
+}
+
+/* Back to top: use the original background and a height of 15px + 19px + 15px. */
+.back-to-top {
+    height: 49px;
+    background-color: #37475a;
+}
+
+/* Footer links: use the original background; reserve 348px based on the screenshot measurement. */
+.footer-links {
+    height: 348px;
+    background-color: #232f3e;
+}
+
+/* Footer settings: use the original background and dividing line; the measured 109px includes the border. */
+.footer-settings {
+    box-sizing: border-box;
+    height: 109px;
+    border-top: 1px solid #3a4553;
+    background-color: #232f3e;
+}
+
+/* Footer bottom: use the original dark background; reserve 410px based on the screenshot measurement. */
+.footer-bottom {
+    height: 410px;
+    background-color: #131a22;
 }
