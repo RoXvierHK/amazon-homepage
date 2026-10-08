@@ -727,12 +727,15 @@ body {
     background-color: #232f3e;
 }
 
-/* Footer settings: use the original background and dividing line; the measured 109px includes the border. */
+/* Footer settings: keep the measured 109px height and original divider; center the row without extra inline text spacing. */
 .footer-settings {
     box-sizing: border-box;
     height: 109px;
     border-top: 1px solid #3a4553;
     background-color: #232f3e;
+    text-align: center;
+    font-size: 0;
+    line-height: 0;
 }
 
 /* Footer bottom: use the original dark background; reserve 410px based on the screenshot measurement. */
@@ -868,4 +871,126 @@ body {
 /* More link: keep the original 4px gap after the arrow. */
 .footer-more-link {
     padding-left: 4px;
+}
+
+/* Settings row: fit around the floated items and restore the original 12px text size and 18px line height. */
+.footer-settings-row {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+}
+
+/* Footer brand: combine the original 10px and 30px top gaps; 0.6 times 12px gives 7.2px side padding. */
+.footer-brand {
+    float: left;
+    margin-top: 40px;
+    padding: 0 7.2px;
+}
+
+/* Footer logo: use the original 76px by 27px image region. */
+.footer-logo {
+    display: block;
+    width: 76px;
+    height: 27px;
+    overflow: hidden;
+}
+
+/* Footer logo image: display the 2x image at half size and use the original footer logo offsets. */
+.footer-logo img {
+    display: block;
+    width: 350px;
+    height: 450px;
+    margin-left: -10px;
+    margin-top: -90px;
+}
+
+/* Footer options: top spacing is 10 + 18px; the left gap combines 70px with a measured 3.14px text space. */
+.footer-options {
+    float: left;
+    margin-top: 28px;
+    margin-left: 73.14px;
+    padding: 0 7.2px;
+}
+
+/* Setting links: use the original border, corners and padding; 4px plus a measured 3.14px space separates the links. */
+.footer-setting-link {
+    float: left;
+    margin-right: 7.14px;
+    padding: 6px 18px 6px 8px;
+    border: 1px solid #848688;
+    border-radius: 3px;
+    color: #ccc;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+/* Setting link hover: use the original lighter border color. */
+.footer-setting-link:hover {
+    border-color: #8d9096;
+}
+
+/* Setting text: reproduce the original 0.6em side padding; 0.6 times 13px is 7.8px. */
+.footer-setting-text {
+    float: left;
+    padding: 0 7.8px;
+}
+
+/* Language content: keep the original inner link's 7.8px side padding. */
+.footer-language-content {
+    float: left;
+    padding: 0 7.8px;
+}
+
+/* Setting icons: reuse the local flag image at the original 194px by 295px display size. */
+.footer-setting-icon {
+    float: left;
+    background-image: url("../img/amazon-flags.png");
+    background-size: 194px 295px;
+    background-repeat: no-repeat;
+}
+
+/* Globe: use the original 15px square region, image offsets and 2px downward shift. */
+.footer-globe {
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    background-position: -77px -24px;
+}
+
+/* Arrows: center the 16px icon in the 18px line; combine the original 9px shift with a measured 3.41px space. */
+.footer-arrows {
+    width: 12px;
+    height: 16px;
+    margin-top: 1px;
+    margin-left: 12.41px;
+    margin-right: -9px;
+    background-position: -79px -79px;
+}
+
+/* Currency option: account for the original symbol's 3px top margin while keeping the text aligned with the other options. */
+.footer-currency {
+    margin-top: -3px;
+    padding-top: 9px;
+}
+
+/* Currency symbol: use the original white text without extra side padding. */
+.footer-currency-symbol {
+    float: left;
+    color: #fff;
+}
+
+/* Country option: keep the original final 4px margin without an extra space after it. */
+.footer-country {
+    margin-right: 4px;
+}
+
+/* Country flag: use the original 18px by 12px region; top spacing combines the 3px margin and 1px shift. */
+.footer-country-flag {
+    width: 18px;
+    height: 12px;
+    margin-top: 4px;
+    background-position: -54px -108px;
 }
