@@ -16,12 +16,6 @@ body {
     overflow: hidden;
 }
 
-/* Navigation bar: use the original Amazon page's background color and its 39px maximum height as this bar's height. */
-.nav-bar {
-    background-color: #232f3e;
-    height: 39px;
-}
-
 /* Logo: use the original 98px by 34px region; spacing is calculated from the original page's CSS. */
 .logo {
     float: left;
@@ -413,4 +407,96 @@ body {
     padding-top: 12px;
     padding-bottom: 13px;
     border-color: #fff;
+}
+
+/* Promotions: use the original 1600px outer width and surrounding spacing. */
+.promo-section {
+    width: 1568px;
+    margin: 0 auto;
+    padding: 8px 16px;
+    overflow: hidden;
+}
+
+/* Cards: use the calculated wide-screen size, original gap and 16px corners. */
+.promo-card {
+    float: left;
+    width: 298.444444px;
+    height: 477.511111px;
+    margin-right: 8px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Beyblade card: use the local toy promotion image as its background. */
+.promo-beyblade {
+    background-image: url("../img/promo-beyblade.jpg");
+}
+
+/* Delivery card: use the local image and the original dark text color. */
+.promo-delivery {
+    background-image: url("../img/promo-delivery.jpg");
+    color: #0f1111;
+}
+
+/* Kindle card: use the local reading image and the original dark text color. */
+.promo-kindle {
+    background-image: url("../img/promo-kindle.jpg");
+    color: #0f1111;
+}
+
+/* Video card: use the local movie promotion image as its background. */
+.promo-video {
+    background-image: url("../img/promo-video.jpg");
+}
+
+/* Haul card: use the local shopping image and remove the final card's gap. */
+.promo-haul {
+    background-image: url("../img/promo-haul.jpg");
+    margin-right: 0;
+}
+
+/* Card text: use the original 12px top and side spacing. */
+.promo-text {
+    padding: 12px;
+}
+
+/* Card headings: calculate the original 11.8% font size and 0.095em bottom padding. */
+.promo-text h2 {
+    font-size: 35.216444px;
+    line-height: 1;
+    padding-bottom: 3.345562px;
+}
+
+/* Card descriptions: calculate the original 6.2% font size and 1.35em line height. */
+.promo-text p {
+    font-size: 18.503556px;
+    line-height: 1.35;
+    margin-top: 0.299289px;
+}
+
+/* Delivery text: reserve room for the 16px terms line and 12px bottom gap. */
+.promo-delivery .promo-text {
+    height: 425.511111px;
+}
+
+/* Delivery terms: use the original 11px text, 16px line height and side spacing. */
+.promo-terms {
+    margin: 0 12px;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+/* Haul heading: calculate its separate 12.5% font size and 0.1em bottom padding. */
+.promo-haul h2 {
+    font-size: 37.305556px;
+    padding-bottom: 3.730556px;
+}
+
+/* Haul description: calculate its original 0.191rem + 5.454% size with a 16px root. */
+.promo-haul .promo-text p {
+    font-size: 19.33316px;
+    margin-top: 0.133368px;
 }
