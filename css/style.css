@@ -687,12 +687,16 @@ body {
     background-color: #fff;
 }
 
-/* Recommendation box: use the original border and corners; reserve 148px based on the screenshot measurement. */
+/* Recommendation box: combine the original spacing; top is 20 + 19px and each side is 20 + 20px. */
 .recommendation-box {
     box-sizing: border-box;
-    height: 148px;
+    padding: 39px 40px 17px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    color: #000;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
 }
 
 /* Footer: start below any floated content. */
@@ -724,4 +728,52 @@ body {
 .footer-bottom {
     height: 410px;
     background-color: #131a22;
+}
+
+/* Recommendation heading: use the original Amazon Ember font, text sizes and 4px bottom padding. */
+.recommendation-title {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-bottom: 4px;
+}
+
+/* Sign-in button: use the original 17% width, 4px vertical gaps and yellow color; 6.25rem corners equal 100px at a 16px root size. */
+.recommendation-sign-in {
+    display: block;
+    box-sizing: border-box;
+    width: 17%;
+    margin: 4px auto;
+    padding: 5px 11px;
+    border: 1px solid #ffd814;
+    border-radius: 100px;
+    background-color: #ffd814;
+    color: #0f1111;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+/* Sign-in hover: use the original darker yellow background and border. */
+.recommendation-sign-in:hover {
+    background-color: #ffce12;
+    border-color: #ffce12;
+}
+
+/* New customer text: use the original 11px font size and inherited 15px line height. */
+.recommendation-customer {
+    font-size: 11px;
+    line-height: 15px;
+}
+
+/* Registration link: use the original blue color and underline. */
+.recommendation-customer a {
+    color: #2162a1;
+    text-decoration: underline;
+}
+
+/* Registration link hover: use the original darker blue. */
+.recommendation-customer a:hover {
+    color: #0c3353;
 }
