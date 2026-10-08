@@ -508,3 +508,19 @@ body {
     font-size: 19.33316px;
     margin-top: 0.133368px;
 }
+
+/* Kindle logo: calculate its height from the original 6.41% of the inner header height. */
+.kindle-logo {
+    display: block;
+    width: auto;
+    height: 29.070062px;
+    margin-top: 12px;
+}
+
+/* Prime logo: calculate its square size from the original 15.04% of the card height. */
+.prime-logo {
+    display: block;
+    width: 71.817671px;
+    height: 71.817671px;
+    margin-top: 12px;
+}
