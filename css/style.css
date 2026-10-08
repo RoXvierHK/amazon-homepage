@@ -738,10 +738,115 @@ body {
     line-height: 0;
 }
 
-/* Footer bottom: use the original dark background; reserve 410px based on the screenshot measurement. */
+/* Footer bottom: keep the original dark background and let the content determine the height. */
 .footer-bottom {
-    height: 410px;
     background-color: #131a22;
+}
+
+/* Footer services: use the original 1000px wide-screen width and 30px top and bottom padding. */
+.footer-services {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* Service rows: contain the floated links and use the original 15px gap between rows. */
+.footer-service-row {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+/* Final service row: skip one column and gap, 122.5 + 23.75px, and remove the last row gap. */
+.footer-service-row-last {
+    margin-left: 146.25px;
+    margin-bottom: 0;
+}
+
+/* Service links: use calculated column widths and gaps; the original side padding is 12px times 0.75. */
+.footer-service {
+    float: left;
+    box-sizing: border-box;
+    width: 122.5px;
+    margin-right: 23.75px;
+    padding: 0 9px;
+    color: #ddd;
+    font-size: 12px;
+    line-height: 13.8px;
+    text-decoration: none;
+}
+
+/* Last service link: remove the gap after the last item in each row. */
+.footer-service-last {
+    margin-right: 0;
+}
+
+/* Service titles: use the original 12px regular text and 14px line height. */
+.footer-service-title {
+    color: #ddd;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+/* Service descriptions: use the original gray text and 110% line height, 12 times 1.1 = 13.2px. */
+.footer-service-description {
+    display: inline-block;
+    color: #999;
+    font-size: 12px;
+    line-height: 13.2px;
+}
+
+/* Service links: underline the text when the mouse is over a link. */
+.footer-service:hover {
+    text-decoration: underline;
+}
+
+/* Copyright area: use the original padding, text color, font size and line height. */
+.footer-copyright {
+    padding: 10px 0 30px;
+    color: #ddd;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+/* Legal row: remove extra space around the centered inline-block container. */
+.footer-legal-row {
+    font-size: 0;
+    line-height: 0;
+}
+
+/* Legal links container: center the group and contain its floated links. */
+.footer-legal-links {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* Legal links: use the original side padding, 12px times 0.6 = 7.2px. */
+.footer-legal-links a {
+    float: left;
+    padding: 0 7.2px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+/* Legal links: show an underline on hover. */
+.footer-legal-links a:hover {
+    text-decoration: underline;
+}
+
+/* Privacy icon: use the original 29px by 14px region, image offsets and 2.25px top spacing. */
+.footer-privacy-icon {
+    float: left;
+    width: 29px;
+    height: 14px;
+    margin-top: 2.25px;
+    background-image: url("../img/amazon-icons-2x.png");
+    background-size: 350px 450px;
+    background-position: -136px -380px;
+    background-repeat: no-repeat;
 }
 
 /* Recommendation heading: use the original Amazon Ember font, text sizes and 4px bottom padding. */
