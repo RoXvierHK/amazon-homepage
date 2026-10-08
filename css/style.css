@@ -631,3 +631,8 @@ body {
     overflow: hidden;
     margin-bottom: 0;
 }
+
+/* Last card: remove the right gap so four 386px cards and three 8px gaps fit within 1568px. */
+.category-card-last {
+    margin-right: 0;
+}
